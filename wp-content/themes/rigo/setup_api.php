@@ -18,3 +18,9 @@ $api->get([ 'path' => '/course/(?P<id>[\d]+)', 'controller' => 'SampleController
 $api->delete([ 'path' => '/course/(?P<id>[\d]+)', 'controller' => 'SampleController:deleteCourse' ]); 
 $api->post([ 'path' => '/course', 'controller' => 'SampleController:createCourse' ]); 
 $api->get([ 'path' => '/course', 'controller' => 'SampleController:getCoursesWithCustomFields' ]); 
+
+$api->get([ 'path' => '/game/(?P<id>[\d]+)', 'controller' => 'GameController:getSingle' ]); 
+$api->delete([ 'path' => '/game/(?P<id>[\d]+)', 'controller' => 'GameController:deleteGame' ]); 
+$api->post([ 'path' => '/game', 'controller' => 'GameController:createGame' ]); 
+$api->get([ 'path' => '/allGames', 'controller' => 'GameController:getAllGames' ]); 
+

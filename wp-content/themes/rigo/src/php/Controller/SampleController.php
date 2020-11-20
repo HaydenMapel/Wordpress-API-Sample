@@ -38,6 +38,7 @@ class SampleController{
             'post_title'    => $body->title,
             ]);
             return $id;
+
     }
 
     
